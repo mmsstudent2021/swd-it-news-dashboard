@@ -1,0 +1,62 @@
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "bootstrap/scss/bootstrap";
+
+
+#sidebar{
+
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .sidebar-spacer{
+    height: 2rem;
+  }
+
+  .sidebar-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+  }
+  .sidebar-link:hover,.sidebar-link.active{
+    background-color: gray;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  #sidebar{
+    width: 300px;
+    position: fixed;
+    transition: 0.5s;
+    transform: translateX(-300px);
+    //display: none;
+    &.show{
+      transform: translateX(0px);
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
